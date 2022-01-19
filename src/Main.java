@@ -13,11 +13,9 @@ public class Main {
         //найти и напечатать наибольший элемент массива
         int max = mass[0];
         int i = 1;
-        if (i < mass.length) {
-            do {
-                if (mass[i] > max) max = mass[i];
-                i++;
-            } while (i < mass.length);
+        while (i < mass.length) {
+            if (mass[i] > max) max = mass[i];
+            i++;
         }
         System.out.println("Maximum -> " + max);
 
