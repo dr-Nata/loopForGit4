@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
@@ -8,7 +9,8 @@ public class Main {
     }
 
     private void run() {
-        int[] mass = createMass(10);
+        int n = new Scanner(System.in).nextInt();
+        int[] mass = createMass(n);
         //printArray(mass);
         //найти и напечатать наибольший элемент массива
         int max = mass[0];
